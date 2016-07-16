@@ -1,0 +1,48 @@
+body {
+	overflow-y: hidden;
+	word-wrap: keep-all; /* {word-wrap: break-word;} - ? */
+}
+
+.back {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+.wrapper {
+	position: absolute; /* for overflowing */
+	height: 96vh; /* necessary, if {position: absolute} */
+	width: 9cm; /* set it to any value you wish */
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+	margin: 0;
+}
+
+ol, ul {
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: inherit;
+}
+
+li { /* both <ol> & <ul> are affected */
+	list-style-type: none;
+}
+
+ul > li::before {
+	content: "— ";
+}
+
+.p {
+	width: 100%;
+}

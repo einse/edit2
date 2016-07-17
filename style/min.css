@@ -23,6 +23,24 @@ body {
 	align-items: flex-start;
 }
 
+.layout {
+	display: flex;
+}
+
+.panelLeft {
+	background-color: #0074d9;
+	flex-grow: 1;
+}
+
+.panelRight {
+	background-color: #3d9970;
+	flex-grow: 1;
+}
+
+.wrapper {
+	flex-grow: 3;
+}
+
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 	margin: 0;
 }
